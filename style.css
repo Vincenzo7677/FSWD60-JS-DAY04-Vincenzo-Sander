@@ -48,3 +48,9 @@
   	line-height: 65%;
   	font-size: 30px;
 }
+
+#evaluteStatementButton {
+	height: 116px;
+	position: absolute;
+	left: 204px;
+}
