@@ -51,6 +51,14 @@
   	font-size: 30px;
 }
 
+.calcRow div:hover{
+  	background-color: #D988D9;
+}
+
+.calcRow div:active{
+	background-color: #8888D9;
+}
+
 #evaluteStatementButton {
 	height: 116px;
 	position: absolute;
