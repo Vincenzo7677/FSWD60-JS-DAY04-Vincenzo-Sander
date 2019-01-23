@@ -42,6 +42,8 @@ function sumbitNightsData() {
 		var output = document.createElement("button")
 		//Set button text to I'll Reserve
 		output.appendChild(document.createTextNode("I'll Reserve"));
+		//Add a listener for click to run reserved()
+		output.addEventListener('click', reserved, false)
 		//Add button to output container
 		nightsOutputContainer.appendChild(output);
 	} else {
@@ -50,4 +52,8 @@ function sumbitNightsData() {
 		//Add text node to output container
 		nightsOutputContainer.appendChild(output);
 	}
+}
+
+function reserved() {
+	alert('Reserved!')
 }
