@@ -24,13 +24,13 @@ function truncate(inputString, truncateValue) {
 truncate("Hello I only want 5 of these letters", 5)
 
 //Basic Ex 3
-function personalInfo(name, age, profession) {
+function personalInfo(name, surname, age, desc) {
 	//Create variable to store output
 	var outputString = "";
 	//Construct string for output using parameters
-	outputString = "Hi I am " + name + " I am " + age + " years old and I am a " + profession + ".";
+	outputString = "Hi I am " + name + " " + surname + " I am " + age + " years old and " + desc + ".";
 	//Log output
 	console.log(outputString);
 }
-//Call function personalInfo with name, age, and profession as arguements
-personalInfo("Batman", 44, "Vigilante");
+//Call function personalInfo with name, surname, age, and short description as arguements
+personalInfo("Bruce", "Wayne", 44, "I fight crime");
