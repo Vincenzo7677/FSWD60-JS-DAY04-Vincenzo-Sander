@@ -17,11 +17,15 @@ function clearStatement() { //Clear button function
    	statement.appendChild(document.createTextNode(""));
 }
 function evaluateStatement() { //Equals button function
-	var answer = document.getElementById("answer") 
-	result = document.createTextNode(eval(statement.textContent));
-   	removeChildren(statement);
-   	removeChildren(answer);
-   	answer.appendChild(result);
+	try {
+		var answer = document.getElementById("answer") 
+		result = document.createTextNode(eval(statement.textContent));
+	   	removeChildren(statement);
+	   	removeChildren(answer);
+	   	answer.appendChild(result);
+   	} catch(err) {
+   		alert("That's not how math works fam")
+   	}
 }
 function deleteToTheLeft() { //Del button function
 	newStatement = statement.textContent.substring(0, statement.textContent.length-1);
