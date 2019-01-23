@@ -1,0 +1,13 @@
+#hotelAppContainer {
+  	border: 2px solid #003580;
+	display:inline-block;
+  	text-align: center;
+  	padding: 20px;
+  	width: auto;
+  	background-color: #E9F0FA;
+}
+
+#hotelAppContainer 	button {
+	background-color: #003580;
+	color: #FFFFFF;
+}
