@@ -25,9 +25,21 @@ function evaluateStatement() {
 	var statement = document.getElementById("currentStatement");
 	var answer = document.getElementById("answer")
 	var result = eval(statement.textContent);
-   	removeChildren(document.getElementById("currentStatement"));
+   	removeChildren(statement);
+   	removeChildren(answer);
    	answer.appendChild(document.createTextNode(result));
 }
+
+var deleteToTheLeftButton = document.getElementById("deleteToTheLeftButton");
+deleteToTheLeftButton.addEventListener('click', deleteToTheLeft, false);
+
+function deleteToTheLeft() {
+	var statement = document.getElementById("currentStatement");
+	newStatement = statement.textContent.substring(0, statement.textContent.length-1);
+	removeChildren(statement);
+	statement.appendChild(document.createTextNode(newStatement));
+}
+
 
 function removeChildren(item) {
    	while (item.hasChildNodes()) {
